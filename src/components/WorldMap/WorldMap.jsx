@@ -1,5 +1,5 @@
 import './WorldMapSVG.css';
-import BaseMap from "../assets/Map.svg?react";
+import BaseMap from "./assets/Map.svg?react";
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { FaStar, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import img11 from "../assets/11.jpg";
-import img12 from "../assets/12.jpg";
-import img13 from "../assets/13.jpg";
-import img14 from "../assets/14.jpg";
-import img15 from "../assets/15.jpg";
+import img11 from "./assets/11.jpg";
+import img12 from "./assets/12.jpg";
+import img13 from "./assets/13.jpg";
+import img14 from "./assets/14.jpg";
+import img15 from "./assets/15.jpg";
 
 import { motion } from "framer-motion";
 import "./TestimonialCarousel.css";

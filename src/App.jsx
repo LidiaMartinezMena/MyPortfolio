@@ -8,7 +8,7 @@ import Work from './components/Work';
 import OtherProjects from './components/OtherProjects';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import TestimonialCarousel from './components/TestimonialCarousel';
+
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <OtherProjects />
       <ContactSection />
       <Footer />
-      <TestimonialCarousel />
+      
     </>
   );
 }

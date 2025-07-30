@@ -5,9 +5,9 @@ import MapImg from "../assets/map.png";
 import Leadership from "../assets/Leadership.png";
 import Testimonial from "../assets/testimonial.png";
 import Modal from "./Modal";
-import WorldMap from "./WorldMap";
-import LeadershipSectionDesktop from "./LeadershipSectionDesktop";
-import TestimonialCarousel from "./TestimonialCarousel";
+import WorldMap from "./WorldMap/WorldMap";
+import LeadershipSectionDesktop from "./LeadershipSection/LeadershipSectionDesktop";
+import TestimonialCarousel from "./TestimonialCarousel/TestimonialCarousel";
 import Portfolio from "../assets/portfolio.png";
 
 
@@ -55,7 +55,7 @@ const Work = () => {
         "Designed and built a responsive portfolio website using React, showcasing my front-end development skills, UI/UX design, and animations with Framer Motion. Includes custom components, project modals, and a clean, accessible layout tailored for modern web standards.",
       tech: ["React", "CSS", "Responsive design", "Framer Motion"],
       image: Portfolio,
-      github: "#",
+      github: "https://github.com/LidiaMartinezMena/MyPortfolio.git",
       component: "",
       mobileUrl: "https://myproject.com/mobile",
     },
