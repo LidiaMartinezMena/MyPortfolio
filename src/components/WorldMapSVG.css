@@ -1,0 +1,242 @@
+.map-section {
+  background-color: black;
+  color: white;
+  padding: 30px 30px 0;
+}
+
+.svg-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding-bottom: 80px;
+  flex-direction: row;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  max-height: none;
+}
+
+@media (max-width: 768px) {
+  .svg-container {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    overflow: visible;
+    padding: 40px 30px 0px 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
+
+.map-svg {
+  width:1106px; 
+ max-width: 60%;
+ min-width: unset;
+  height: auto;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .map-svg {
+    min-width: unset;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.map-heading {
+   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+   align-items: flex-end;
+  
+}
+
+.map-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  color: #93c5b2;
+  margin: 0;
+  padding-left: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+  .map-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .map-title {
+    font-size: 28px;
+  }
+
+  .map-subtitle {
+    margin-left: 0;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+
+.hotspot {
+  color: #93c5b2;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 30;
+}
+
+
+
+.hotspot.inactive {
+  fill: #888;
+  filter: none;
+}
+
+.list-item-header {
+  display: flex;
+  align-items: center;
+  height: 50px; 
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .list-item-header {
+    height: auto;
+  }
+}
+
+
+.region-list {
+  position: absolute;
+  left: 70%;
+  list-style: none;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  text-align: left;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.region-list li {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: visible;
+}
+
+@media (max-width: 768px) {
+  .region-list li {
+   margin-bottom: 12px;
+  }
+}
+
+.region-list li:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .region-list li:hover {
+    transform: none;
+  }
+}
+
+.region-item .list-item-header {
+  transition: transform 2s ease-out;
+}
+
+.region-item.highlight {
+  font-weight: bold;
+}
+
+
+.list-wrapper {
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  overflow-y: hidden;
+  z-index: 10;
+  pointer-events: none;
+ scrollbar-width: none;
+ 
+  /* Efecto máscara ruleta */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+@media (max-width: 768px) {
+  .region-list {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .list-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+     overflow-y: auto;
+    padding: 2rem 1rem;
+    mask-image: none;
+    -webkit-mask-image: none;
+    pointer-events: auto;
+    scrollbar-width: thin;
+  }
+}
+
+.spot-info {
+ font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(10px);
+  transition: max-height 1s ease, opacity 1s ease, transform 1s ease;
+}
+
+@media (max-width: 768px) {
+  .spot-info {
+    text-align: left;
+     font-size: 12px;
+  }
+}
+
+.spot-info.visible {
+  font-weight: 400;
+  max-height: 500px; 
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+li.highlight.expanded .spot-info {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.arrow {
+  margin-left: 20px;
+}
+
+.number {
+  color: #93c5b2;
+}

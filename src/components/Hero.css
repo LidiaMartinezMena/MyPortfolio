@@ -1,0 +1,94 @@
+.hero {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  justify-content: center;
+}
+
+.intro {
+  color: #a05a2c;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.name {
+    margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  color: #883611;
+}
+
+.subtitle {
+    margin: 10px 0;
+  font-size: 3rem;
+  color: #814c34;
+  font-weight: 600;
+}
+
+.description {
+    margin: 10px 0;
+  font-size: 1rem;
+  color: #c99628;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.scroll-down {
+  position: absolute;
+   bottom: 80px;
+  left: 50%; 
+  transform: translateX(-50%);
+  text-align: center;
+  color: #a05a2c;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+}
+
+.arrow-wrapper {
+  animation: bounce 1s infinite;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #a05a2c;
+  border-bottom: 2px solid #a05a2c;
+  transform: rotate(-45deg); 
+  margin: 8px auto 0;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about,
+#projects,
+#experience,
+#contact {
+  scroll-margin-top: 150px; 
+}

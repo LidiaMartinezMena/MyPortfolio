@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Pitagon Sans Mono";
+  src: url("../assets/fonts/Pitagon_Sans_Mono/PitagonSansMono-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("../assets/fonts/Supreme/Supreme-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+/* LeadershipSection.css */
+
+.leadership-section-mobile {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leaders-grid-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 297.16px);
+  gap: 10px;
+  width: 100%;
+}
+
+/* Tarjeta destacada (CEO) */
+.leader-featured-mobile {
+  width: 100%;
+  height: 463px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: left;
+}
+
+/* Tarjeta normal */
+.leader-card-mobile {
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 150px;
+}
+
+/* Texto lateral */
+.leadership-text-mobile {
+  font-size: 18px;
+  font-family: "Pitagon Sans Mono", monospace;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.leader-title-mobile {
+  padding: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Pitagon Sans Mono", monospace;
+  text-align: left;
+  width: 100%;
+  z-index: 10;
+}
+
+.leader-info-mobile {
+  padding-top: 16px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.leader-featured-img-wrapper-mobile {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.leader-img-wrapper-mobile {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 181.111px;
+  background-color: #f9f9f2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Imagen CEO en escala de grises */
+.leader-featured-img-mobile {
+  height: 310px;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+/* Imagen en escala de grises */
+.leader-img-mobile {
+  height: 135px;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.leader-icon-mobile {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  padding: 11.68px;
+  clip-path: circle(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Nombre */
+.leader-name-mobile {
+  display: inline-flex;
+  align-items: left;
+  font-weight: 700;
+  justify-content: left;
+  font-size: 14px;
+  font-family: "Pitagon Sans Mono", monospace;
+}
+
+/* Cargo / rol */
+.leader-role-mobile {
+  color: #878580;
+  margin-top: 0.25rem;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Pitagon Sans Mono", monospace;
+}
+
+.leader-hover-text-mobile {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Chrome, Safari */
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #878580;
+  margin-top: 0.25rem;
+  font-weight: 300;
+  font-family: "Supreme", monospace;
+}
+
+/* Texto descripción */
+.leadership-text-mobile {
+  grid-column: 1 / span 2; /* Columna 1 y 2 */
+  grid-row: 3 / span 1; /* Fila 3 */
+  font-size: 18px;
+  font-family: "Pitagon Sans Mono", monospace;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+}

@@ -1,0 +1,45 @@
+.socials-left {
+  position: fixed;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 100;
+  height: 100vh;
+}
+
+.socials-left li {
+  list-style: none;
+}
+
+.socials-left li a {
+  color: #a0a0a0;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.socials-left li a:hover {
+  color: #f76f1f;
+}
+
+.email-right {
+  position: fixed;
+  right: 40px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  z-index: 100;
+}
+
+.email-right a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.email-right a:hover {
+  color: #f76f1f;
+}
+
+

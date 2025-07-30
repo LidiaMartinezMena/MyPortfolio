@@ -1,0 +1,17 @@
+
+.footer {
+ 
+  color: #883611;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.75rem;
+}
+
+.footer-stats {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #883611;
+  font-size: 0.875rem;
+}

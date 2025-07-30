@@ -1,0 +1,68 @@
+.other-projects-section {
+    max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.other-projects-title {
+  font-size: 24px;
+  color: #883611;
+ margin: 0;
+  font-weight: bold;
+}
+
+
+.other-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #faebd7;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card-icons a {
+  margin-left: 0.5rem;
+  color: #fcc57d;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.card-icons a:hover {
+  color: #a05a2c;
+}
+
+.other-project-tech {
+    padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 10px;
+  color: #b09388;
+  font-family: monospace;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+
+

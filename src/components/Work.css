@@ -1,0 +1,137 @@
+.work-section {
+    max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.work-title {
+  font-size: 32px;
+  color: #883611;
+  font-weight: 600;
+  
+  margin-bottom: 40px;
+  border-bottom: 1px solid #883611;
+  display: inline-block;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.projects > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.projects > div.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .project-content {
+  text-align: left; 
+}
+
+.project:nth-child(even) .project-content {
+  order: 2;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(192, 157, 124, 0.3);
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-content {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+  text-align: right;
+}
+
+
+.project-title {
+  font-size: 24px;
+  color: #883611;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.featured-label {
+     color: #a05a2c;
+     margin: 2px;
+     font-size: 14px;
+}
+
+
+
+.project-description {
+ 
+  border-radius: 4px;
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project-tech {
+    padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 10px;
+  color: #b09388;
+  font-family: monospace;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.reverse .project-tech {
+  text-align: left; 
+  justify-content: flex-start;
+}
+
+.project-links {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: #fcd9ac;
+}
+.reverse .project-links {
+  text-align: left; 
+  justify-content: flex-start;
+}
+
+.project-links a {
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #c99628;
+}
+
+
+.icon-link:hover {
+  transform: scale(1.2);
+}
