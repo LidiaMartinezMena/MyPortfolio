@@ -1,12 +1,38 @@
-# React + Vite
+# 💻 Lidia Martínez – Personal Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This website showcases my experience, skills, and selected projects as a Front-End Developer specialized in **React**, **Tailwind CSS**, and **web automation** using tools like **Make (Integromat)** and **OpenAI**.
 
-Currently, two official plugins are available:
+🌍 [Live Site](https://your-deployed-portfolio-link.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ About This Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio was built with:
+
+- ⚛️ **React.js** – Modular components, reusable UI
+- 🎨 **CSS3 / Tailwind CSS** – Clean and responsive design
+- 🚀 **Vite** – Lightning-fast build tool
+- 🧠 **Framer Motion** – Smooth animations
+- 🧩 **Custom components** – Like a World Map, Testimonials Carousel, and Interactive Modal
+
+---
+
+## 🧩 Featured Components
+
+- **Hero Section** with introduction and CTA
+- **About Me** and **Experience Timeline**
+- **Projects Gallery** with modals and responsive images
+- **Testimonials Carousel** animated with Framer Motion
+- **Interactive World Map** (SVG-based)
+- **Fully responsive layout**
+
+---
+
+## 📦 Getting Started
+
+```bash
+git clone https://github.com/LidiaMartinezMena/MyPortfolio.git
+cd MyPortfolio
+npm install
+npm run dev
