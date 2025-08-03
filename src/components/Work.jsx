@@ -37,7 +37,7 @@ const Work = () => {
       component: <LeadershipSectionDesktop />,
       mobileUrl: "https://myproject.com/mobile",
     },
-    {
+    /*{
       type: "React Component",
       title: "Testimonials Slider",
       description:
@@ -47,7 +47,7 @@ const Work = () => {
       github: "#",
       component: <TestimonialCarousel />,
       mobileUrl: "https://myproject.com/mobile",
-    },
+    }*/
     {
       type: "React Project",
       title: "Personal Developer Portfolio",

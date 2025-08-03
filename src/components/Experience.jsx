@@ -22,6 +22,14 @@ const jobs = [
     ],
   },
   {
+    company: "Architect",
+    title: "Project Lead",
+    date: "Jan 2014 – Mar 2023",
+    bullets: [
+      "10 Years working in the construction industry as an architect, leading national and international projects from design to execution. I’ve managed projects such as student residences in London and Australia, residential buildings in Madrid, and office towers in Vienna. This experience allowed me to coordinate multidisciplinary teams, navigate complex timelines, and strengthen essential soft skills like leadership, adaptability, and clear communication.",
+    ],
+  },
+  {
     company: "Lidia Creativa",
     title: "Founder",
     date: "Jul 2025 – Present",
