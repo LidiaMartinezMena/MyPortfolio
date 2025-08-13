@@ -1,23 +1,17 @@
 .map-section {
-  background-color: black;
+  overflow: hidden;
+  background-color: #93c5b2;
   color: white;
   padding: 30px 30px 0;
 }
 
 .svg-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  padding-bottom: 80px;
-  flex-direction: row;
-  width: 100vw;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  max-height: none;
+ position: relative;
+  display: block;
+  width: 100vw;      
+  background: #93c5b2;
+  padding: 40px 30px 20px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -25,7 +19,7 @@
    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: #93c5b2;
     width: 100vw;
     height: auto;
     overflow: visible;
@@ -35,13 +29,15 @@
   }
 }
 
-.map-svg {
-  width:1106px; 
- max-width: 60%;
- min-width: unset;
+.map-wrapper{ width: 100%; }
+.map-svg{
+  display: block;
+  width: 50%;
   height: auto;
-  flex: 1;
+  max-width: none;      
 }
+
+.map-svg > svg{ width: 100%; height: auto; }
 
 @media (max-width: 768px) {
   .map-svg {
@@ -58,7 +54,6 @@
 .map-heading {
    display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
    align-items: flex-end;
   
 }
@@ -66,7 +61,7 @@
 .map-title {
   font-family: 'Playfair Display', serif;
   font-size: 35px;
-  color: #93c5b2;
+  color: #2d3d37;
   margin: 0;
   padding-left: 30px;
 }
@@ -93,7 +88,7 @@
 
 
 .hotspot {
-  color: #93c5b2;
+  color: black;
   cursor: pointer;
   transition: all 0.5s ease;
   z-index: 30;
@@ -102,14 +97,14 @@
 
 
 .hotspot.inactive {
-  fill: #888;
+  fill: #e5c623;
   filter: none;
 }
 
 .list-item-header {
   display: flex;
   align-items: center;
-  height: 50px; 
+  height: 40px; 
   line-height: 1;
 }
 
@@ -122,7 +117,6 @@
 
 .region-list {
   position: absolute;
-  left: 70%;
   list-style: none;
   padding: 0;
   font-family: 'Playfair Display', serif;
@@ -166,21 +160,20 @@
 
 .list-wrapper {
   position: absolute;
-  height: 400px;
-  width: 100%;
-  overflow-y: hidden;
+  top: 350px;
+    left: 0%;
+  width: min(400px, 30%);
   z-index: 10;
   pointer-events: none;
- scrollbar-width: none;
- 
-  /* Efecto máscara ruleta */
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  height: auto;
+  overflow-y: visible;
+  mask-image: none;
+  -webkit-mask-image: none;
 }
 
 @media (max-width: 768px) {
   .region-list {
-    position: relative;
+    position: static;
     top: unset;
     left: unset;
     transform: none;
@@ -223,13 +216,13 @@
   font-weight: 400;
   max-height: 500px; 
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateX(0px);
 }
 
 li.highlight.expanded .spot-info {
   max-height: 500px;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(10px);
   pointer-events: auto;
 }
 
@@ -237,6 +230,3 @@ li.highlight.expanded .spot-info {
   margin-left: 20px;
 }
 
-.number {
-  color: #93c5b2;
-}

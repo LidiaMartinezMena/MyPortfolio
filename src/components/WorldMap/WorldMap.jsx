@@ -36,7 +36,7 @@ const hotspots = [
     },
     {
         id: 4,
-        name: 'Ecuador',
+        name: 'Italy',
         country: 'Spain',
         pipeline: '1.65Mha',
         projects: '2Gha',
@@ -46,44 +46,16 @@ const hotspots = [
     },
     {
         id: 5,
-        name: 'México',
-        country: 'USA',
+        name: 'Spain',
+        country: 'Spain',
         pipeline: '16Mha',
         projects: '26Gha',
         committed: '75Mha',
         cx: 324.055,
         cy: 482
     },
-    {
-        id: 6,
-        name: 'Chile',
-        country: 'USA',
-        pipeline: '5Mha',
-        projects: '3Gha',
-        committed: '56Mha',
-        cx: 324.055,
-        cy: 482
-    },
-    {
-        id: 7,
-        name: 'Paraguay',
-        country: 'USA',
-        pipeline: '6Mha',
-        projects: '63Gha',
-        committed: '85Mha',
-        cx: 324.055,
-        cy: 482
-    },
-    {
-        id: 8,
-        name: 'Argentina',
-        country: 'Spain',
-        pipeline: '2Mha',
-        projects: '2Gha',
-        committed: '2Mha',
-        cx: 802,
-        cy: 363
-    },
+   
+    
 ];
 
 const WorldMap = () => {
@@ -181,7 +153,7 @@ const WorldMap = () => {
                             cx={spot.cx}
                             cy={spot.cy}
                             r="6"
-                            fill="#93c5b2"
+                            fill="white"
                             filter={`url(#glow-${spot.id})`}
                             onClick={() => handleClick(spot.id)}
                         />
