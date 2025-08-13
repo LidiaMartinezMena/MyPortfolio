@@ -53,7 +53,7 @@ const Work = () => {
       title: "Personal Developer Portfolio",
       description:
         "Designed and built a responsive portfolio website using React, showcasing my front-end development skills, UI/UX design, and animations with Framer Motion. Includes custom components, project modals, and a clean, accessible layout tailored for modern web standards.",
-      tech: ["React", "CSS", "Responsive design", "Framer Motion"],
+      tech: ["React", "Vite", "CSS", "Responsive design", "Framer Motion"],
       image: Portfolio,
       github: "https://github.com/LidiaMartinezMena/MyPortfolio.git",
       component: "",
